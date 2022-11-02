@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #faefe3;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Chatbox Component Styling
+============================ */
+#chat-box {
+  background-color: #ffffff;
+  max-width: 375px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+#chat-box * {
+  color: #fff;
+}
+#chat-box .message-info {
+  padding: 22px 32px;
+  background: #4643d3;
+  position: relative;
+}
+#chat-box .message-info #close-chat {
+  all: unset;
+  position: absolute;
+  top: 22px;
+  right: 32px;
+}
+#chat-box .message-info #close-chat svg {
+  font-size: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#chat-box .message-info .user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+#chat-box .message-info .user-info .profile-pic {
+  width: 48px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #ffffff10;
+  border-radius: 50px;
+  display: flex;
+}
+#chat-box .message-info .user-info .full-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+#chat-box .message-info .user-info .position {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+#chat-box .message-info .message-body {
+  margin-top: 17px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#chat-box .typing-box {
+  padding: 0px 90px 0px 32px;
+  position: relative;
+}
+#chat-box .typing-box input#reply {
+  all: unset;
+  color: #000;
+  height: 58px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+}
+#chat-box .typing-box input#reply::placeholder {
+  color: #afafbd;
+  font-weight: 400;
+}
+#chat-box .typing-box button#send-message-btn {
+  all: unset;
+  color: #4643d3;
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Best Seller Components Styling
+================================= */
+#best-sellers {
+  padding: 32px;
+  background-color: #ffffff;
+  max-width: 375px;
+  border-radius: 24px;
+}
+#best-sellers h1.heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+#best-sellers #products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+#best-sellers #products-list .product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 13px 18px;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+#best-sellers #products-list .product-card:hover {
+  background-color: #fef2ee;
+}
+#best-sellers #products-list .product-card .product-image {
+  width: 94px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-sellers #products-list .product-card .product-info .product-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #fe805c;
+}
+#best-sellers #products-list .product-card .product-info .company-name {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #afafbd;
+}
+#best-sellers #products-list .product-card .product-info .product-price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
